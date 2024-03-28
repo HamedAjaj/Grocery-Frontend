@@ -1,0 +1,13 @@
+<header class="nav row d-flex justify-content-between align-items-center container">
+        <div class="col-md-1"></div>
+        <div class="col-md-2 categories me-2">
+            <img src="./assets/images/headernav/layoutgrid.svg" alt="">
+            <p >Brows All Categories</p>
+        </div>
+        <div class="{{item.width}} d-flex mx-2" *ngFor="let item of data">
+            <a  routerLinkActive="active" [routerLink]="item.router" class="d-flex flex-nowrap" >
+             <img src="./assets/images/headernav/{{item.img}}" alt="">
+             <p  class="flex-nowrap">{{item.name}}</p>
+            </a>
+         </div>
+</header>

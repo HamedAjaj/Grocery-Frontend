@@ -1,0 +1,23 @@
+<div class="container d-flex justify-content-between align-items-center">
+    <div class="" *ngFor="let card of topRatedData">
+       <p  class="cardName mb-5"> {{card}}</p>
+
+       <div class="d-flex my-4 " *ngFor="let card of images">
+        <img src="../../../assets/images/TopRated/{{card}}" style="background-color: #F4F6FA;" alt="" width="80px" height="80px">
+        <div class=" mx-2">
+            <h5 class="m-0">Orange 1kg</h5>
+            <div class="stars ">
+                <span class="fa fa-star checked star mx-1"></span>
+                <span class="fa fa-star checked star mx-1"></span>
+                <span class="fa fa-star checked star mx-1"></span>
+                <span class="fa fa-star-half checked  mx-1"></span>
+                <span class="fa fa-star star mx-1"></span>
+                <span class="star mx-1">(4)</span>
+            </div>
+        <p style="color: #3BB77E;">$1 <del style="color: gray;">$1.99</del></p>
+        </div>
+       </div>
+     
+    </div>
+    
+</div>

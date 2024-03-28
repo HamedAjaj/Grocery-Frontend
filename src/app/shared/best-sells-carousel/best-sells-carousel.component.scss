@@ -1,0 +1,49 @@
+
+.p-carousel {
+  position: relative;
+}
+
+.p-carousel-prev {
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+/* 
+.p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+ */
+
+
+ .card{
+   border: 1px solid rgb(223, 219, 219);
+ }
+
+
+ .offer{
+    background-color: #FFD480;
+    margin: -8px -8px;
+    border-radius: 3px;
+    width: fit-content;
+ }
+
+ #addCard{
+    align-items: unset;
+    width: 100% !important;
+ }
+
+ .btncard{
+    background-color: #3BB77E;
+    color: white;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+ }
+ .btncard:hover{
+    background-color: #6bd1a1;
+    transform: scale(1.05);
+    transition: all .5s ease-in-out; 
+ }
+ 

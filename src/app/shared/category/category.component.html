@@ -1,0 +1,16 @@
+<div class="container d-flex  justify-content-between mt-5">
+    <h3 class="">{{sectionName}}</h3>
+    <div class="d-flex ">
+        <div class="mx-2 categorylist"  *ngFor="let category of categories"(click)="onCategoryClick(category.name)" >
+            {{category.name}}
+        </div>
+    </div>
+   
+</div>
+<ng-container *ngIf="sectionName=='Explore Categories'">
+    <app-category-list [SubCategory]="filteredsubCategories"></app-category-list>
+</ng-container>
+
+<ng-container *ngIf="sectionName=='Explore Products'">
+    <app-products></app-products>
+</ng-container>

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.nav{
+    min-height: 72px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.categories{   
+    background-color: #3BB77E;
+    min-height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.categories p{
+    color: #FFFFFF;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+a.active {
+    text-decoration: none;
+    color: #3BB77E;
+}
+
+a p.active {
+    text-decoration: none;
+    color: #3BB77E;
+}

@@ -1,0 +1,24 @@
+<p-carousel [value]="[1,2,3,4,5,6,7,8,9]" [numVisible]="5" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions" [showIndicators]="false"  class="carousel">
+    <ng-template let-product pTemplate="items" >
+        <div class="cards mx-2 p-2" >
+            <img src="../../../assets/images/headernav/Call.svg" class="imgCard" height="124" width="30%" alt="">
+            <p class="categoryname" style="color: #d4cfcf; margin-bottom: 0;font-size: 12px;">categoryName</p>
+            <p class="text-muted prodName" style="font-weight:700; font-size: 16px;margin-bottom: .5rem;">Name</p>
+            <div class="stars" >
+                <span class="fa fa-star checked star mx-1"></span>
+                <span class="fa fa-star checked star mx-1"></span>
+                <span class="fa fa-star checked star mx-1"></span>
+                <span class="fa fa-star-half checked  mx-1"></span>
+                <span class="fa fa-star star mx-1"></span>
+                <span class="star mx-1">(4)</span>
+            </div>
+            <p style="color: #ADADAD;font-size: 12px; font-weight: 200; ">By Mr.food</p>
+            <div class="addCard d-flex justify-content-between">
+                <p class="price">$1 <del style="color: #ADADAD;">$1.99</del></p>
+                <button class="btn px-3 py-2"> <i class="bi bi-cart"></i> Add</button>
+            </div>
+        </div>
+
+    </ng-template>
+    
+</p-carousel>

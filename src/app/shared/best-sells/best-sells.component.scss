@@ -1,0 +1,24 @@
+.sellsSection {
+    color: #253D4E; 
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sellsSection:hover {
+    color: #3BB77E; 
+    cursor: pointer;
+}
+
+.expires{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    color: #FFF;
+    padding: 10px;
+    margin-top: 10px;
+}
+.expires span{
+    
+}

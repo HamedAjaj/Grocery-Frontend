@@ -1,0 +1,11 @@
+<div class="container d-flex  justify-content-start align-items-center mt-5">
+    <h3 class="">Daily Best Sells</h3>
+    <div class="d-flex mx-5 justify-content-start align-items-center">
+        <div class="mx-3 sellsSection"  *ngFor="let sell of sellsTypes"><!-- (click)="onCategoryClick(category.name)"  -->
+            {{sell}}
+        </div>
+    </div>
+    <p class="expires">Expires in: <span class="mx-4"> 10 : 56 :21 </span></p>
+</div>
+
+<app-best-sells-carousel></app-best-sells-carousel>

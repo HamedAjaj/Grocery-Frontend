@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    min-height: 78px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.name,.cart{
+    line-height: 17px;
+    font-size: medium;
+}
+
+.grocName{
+    color: #3BB77E;
+    margin: 0;
+}
+
+.grocName span {
+    font-weight: bold;
+}
+
+
+/* ----------------------------      Search    ------------------------------ */
+
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 42px;
+    background-color: #F3F3F3;
+}
+
+.search .searchInput{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.search .searchInput input[type='search']{
+    border:  none;
+    text-align: start;
+    outline: none;
+    
+    background-color: #F3F3F3;
+}
+
+.search .searchInput .fa{
+    cursor: pointer;
+    background-color: #3BB77E;
+    width: 52px;
+    min-height: 42px;
+    color: #FFFFFF;
+    padding:13px 17px ;
+    flex-shrink: 0;
+    outline-color: #FFFFFF;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.search .category #slct{
+    
+    background-color: #F3F3F3;
+    border: 0;
+    outline: 0;
+}
+
+/* -------------           carts       ------------- */
+.cart{
+    line-height: 17px;
+    font-size: medium;
+}
+.cart #cartSelect{
+    background-color: #FFF;
+    border: 0;
+    outline: 0;
+}
+
+
+/* -------------------      User Profile Name     ----------------- */
+
+.user #cartSelect{
+    background-color: #FFF;
+    border: 0;
+    outline: 0;
+}
+
+
+.dropdown #dropdownMenuButton1{
+    background-color: #F3F3F3;
+    border: none ;
+    outline: none;
+    margin-left: 3px;
+}
+
+.dropdown .dropdown-menu .show{
+    margin: 30px;
+}

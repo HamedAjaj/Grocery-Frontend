@@ -1,0 +1,49 @@
+<footer class="container mt-5 pt-5">
+    <section class="props row">
+        <div *ngFor="let property of properties" class="mini-cart col-md-4 px-4">
+            <img src="../../../assets/images/footer/{{property.image}}" alt="price" class="me-3">
+            <div class="text me-2">
+                <p class="head">{{property.header}}</p>
+                <p class="desc">{{property.description}}</p>
+            </div>
+        </div>
+    </section>
+
+    <hr style="color: #00000055;" class="my-5"/>
+
+    <section class="info d-flex justify-content-between" >
+        <div class="aboutUs d-flex flex-column justify-content-between ">
+            <div class="d-flex">
+                <img src="../../../assets/images/navbar/g_icon.svg" alt="" style="margin-top: -6px;">
+                <p class="d-flex flex-column mx-2 mt-3 name"> Hamed<span>Grocery</span></p>
+            </div>
+            <p class="workhours"><i style="color: #3BB77E;" class="bi bi-geo-alt"></i> Address: <span  class="time">1762 School House Road</span></p>
+            <p class="workhours"><i style="color: #3BB77E;" class="bi bi-telephone"></i> Call Us: <span  class="time">1233-777</span></p>
+            <p class="workhours"><i style="color: #3BB77E;" class="bi bi-envelope"></i> Email: <span  class="time">hamed@contactus.com</span></p>
+            <p class="workhours"><i style="color: #3BB77E;" class="bi bi-stopwatch"></i> Work hours: <span class="time">8:00 - 20:00, Sunday -  Thursday</span></p>
+        </div>
+
+        <div class="items containers" *ngFor="let header of headers">
+             <p class="header">{{header.head}}</p>
+             <div class="subItems "style="line-height:1rem"  *ngFor="let item of header.subhead">
+                <p>{{item}}</p>
+             </div>
+        </div>
+    </section>
+
+    <hr style="color: #00000055;" class="mt-5"/>
+
+
+    <section class="d-flex justify-content-between align-items-center">
+        <div >&copy; 2024, All rights reserved by Hamed </div>
+        <div class="creditcard">
+            <img src="../../../assets/images/footer/Payment.svg" alt="">
+        </div>
+        <div class="media d-flex">
+            <i class="fa-brands fa-facebook-f icon"></i>
+            <i class="fa-brands fa-linkedin-in icon"></i>
+            <i class="fa-brands fa-instagram icon"></i>
+            <i class="fa-brands fa-twitter icon"></i>
+        </div>
+    </section>
+</footer>

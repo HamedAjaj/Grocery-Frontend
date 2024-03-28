@@ -1,0 +1,22 @@
+<!-- <swiper [slidesPerView]="7" [spaceBetween]="10" [navigation]="true" class="container">
+  <ng-template swiperSlide *ngFor="let product of SubCategory;let i=index" class="cardcategory">
+    <div  [ngStyle]="{ 'background-color': backgroundColor[i]}" class="card" >
+      <img src="http://localhost:3000/products{{product.image}}" alt="categoryProduct">
+    <h3>{{ product.categoryName }}</h3>
+    <p>{{ product.description }}</p>
+    <p>{{product.id}}</p>
+  </div>
+  </ng-template>
+</swiper> -->
+
+
+<p-carousel [value]="SubCategory" [numVisible]="6" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions" [showIndicators]="false" >
+  <ng-template let-product let-i pTemplate="item" >
+    <div  [ngStyle]="{ 'background-color': backgroundColor[SubCategory.indexOf(product)]}" class="card mx-2 px-2" >
+      <img src="http://localhost:3000/products/{{product.image}}" alt="categoryProduct">
+    <h3>{{ product.categoryName }}</h3>
+    <p>{{ product.description }}</p>
+    <p>{{product.id}}</p>
+  </div>
+    </ng-template>
+</p-carousel>

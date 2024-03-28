@@ -1,0 +1,28 @@
+<p-carousel [value]="[1,2,3,4,5,6,7,8,9]" [numVisible]="4" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions" [showIndicators]="false"  class="carousel">
+    <ng-template let-product pTemplate="item" >
+        <div class="card mx-2 p-2" >
+            <p class="offer px-3 py-2" style="font-size: 12px !important;">Save 10%</p>
+            <img src="../../../assets/images/headernav/Call.svg" class="imgCard" height="120" width="30%" alt="">
+            <p class=" fs-6 my-0" style="color: #d4cfcf;margin-top: -10px;margin-bottom: -10px;padding: 0;font-weight:200;font-size: 12px !important;">Coffee & tea</p>
+            <p class="text-muted my-1" style="font-weight:500;font-size: 16px; ">Coffe 1kg</p>
+            <div class="stars m-0 p-0">
+                <span class="fa fa-star checked star mx-1"></span>
+                <span class="fa fa-star checked star mx-1"></span>
+                <span class="fa fa-star checked star mx-1"></span>
+                <span class="fa fa-star-half checked  mx-1"></span>
+                <span class="fa fa-star star mx-1"></span>
+                <span class="star mx-1">(4)</span>
+            </div>
+            <p class="my-0" style="color: #ADADAD; font-size: 12px;font-weight: 200; ">By Mr.food</p>
+            <div id="addCard" class="addCard d-flex flex-column justify-content-start">
+                <p class="price p-0 mt-2 mb-0" style="font-size: 18px;font-weight: 500;">$1 <del style="color: #ADADAD;">$1.99</del></p>
+                <div class="progress my-2 mb-0" style="width: 100%;height: 5px;" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 25%;background-color: #3BB77E;"></div>
+                </div>
+                <p class="  mb-2 p-0">Sold 5/20</p>
+                <button class="btncard p-2 my-1" > <i class="bi bi-cart cartcar"></i> Add to cart</button>
+            </div>
+        </div>
+
+    </ng-template>
+</p-carousel>

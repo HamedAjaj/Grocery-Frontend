@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: quicksand;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: 1px solid #c0e2e5eb;
+  max-height: 302.33px;
+  border-radius: 6px;
+}
+
+.card .categoryname{
+font-size: 12px;
+font-weight: 200;
+margin-bottom: 0 !important;
+}
+
+.card .prodName{
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.star{
+    width: 13.34px;
+    color: #D4D4D4;
+}
+
+.checked{
+    color: #FDC040;
+}
+
+
+.btn{
+    background-color: #DEF9EC;
+    border: none;
+    color: #3BB77E;
+    border-radius: 3px;
+}
+
+.imgCard{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.addCard{
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.price{
+  color: #3BB77E;
+  padding-top: 10px;
+}
+
+.p-carousel {
+  margin-top: 30px;
+}
+
+.p-carousel-prev, .p-carousel-next {
+  background-color: #F2F3F4 !important;
+  width: 40px;
+  height: 40px;
+}
+
+ .p-carousel .p-carousel-content .p-carousel-prev, .p-carousel .p-carousel-content .p-carousel-next{
+  box-shadow: none !important;
+  background-color: #F2F3F4;
+  content: "\01F862" !important;
+}
+
+
+/*  reflect in design
+.p-carousel-prev::before {
+  content: '<'; 
+  font-weight: bold;
+  font-size: 20px;
+}
+ */
+/* Customize the next button *//* 
+.p-carousel-next::before {
+  content: '' !important; 
+  background-color: #F2F3F4 !important;
+  color: #FFF !important;
+  font-weight: bold;
+  font-size: 20px;
+  display: none !important;
+}
+.p-carousel-next::after {
+ 
+  font-weight: bold;
+  font-size: 20px;
+} */
+
