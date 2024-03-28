@@ -29,4 +29,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # Grocery-Frontend
 Angular 16
->>>>>>> b6fcccfec436d3f1a21b763ed24f42b9bd1da3da
