@@ -1,0 +1,51 @@
+<section class="signup my-4">
+  <div
+    class="row d-flex signupcontainer col-xl-5 col-md-10 col-sm-12"
+    (mousemove)="onMouseMove($event)"
+    (mouseleave)="onMouseLeave()"
+    [ngClass]="{
+      'hover-left': isHoverLeft,
+      'hover-right': isHoverRight,
+      'hover-top': isHoverTop,
+      'hover-bottom': isHoverBottom
+    }"
+    id="signupcontainer"
+  >
+    <p class="header mb-2">Create Account</p>
+    <form class="signForm col-md-12">
+      <app-input type="text" placeholder="Full-Name"></app-input>
+      <app-input type="email" placeholder="Email"></app-input>
+      <app-input type="password" placeholder="password"></app-input>
+      <div class="form-group">
+        <input
+          type="checkbox"
+          name=""
+          id=""
+          placeholder="enter name"
+          class="col-md-1 me-1"
+          style="width: 15px; height: 15px"
+        />
+        <span style="font-size: 14px; font-family: 'poppins'; color: #666666"
+          >Accept all terms & Conditions</span
+        >
+      </div>
+      <div class="mt-2"><app-button label="Create Account"></app-button></div>
+    </form>
+    <p
+      style="
+        font-size: 14px;
+        font-family: 'poppins';
+        color: #666666;
+        text-align: center;
+        margin-top: 10px;
+      "
+    >
+      Already have account
+      <span
+        style="font-weight: 500; color: #1a1a1a; cursor: pointer"
+        routerLink="/auth/sign-in"
+        >Sign-in</span
+      >
+    </p>
+  </div>
+</section>

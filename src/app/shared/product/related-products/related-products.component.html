@@ -1,0 +1,21 @@
+<div class="cards row mx-2 px-2">
+  <div *ngFor="let x of [1, 2, 3, 4]" class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card shadow my-2">
+        <img src="../../../../assets/images/carts/r1.png" alt="">
+        <p class="Pname">Product Apple</p>
+        <div class="d-flex justify-content-between mx-3">
+            <p>$14,99 <del>20,00</del></p>
+            <i class="bi bi-handbag"></i>
+        </div>
+        <p-rating  [(ngModel)]="value"  [readonly]="true"  [cancel]="false"  style="color: #ff8a00" ></p-rating>
+
+        <span class="offer px-3 py-2">Sale 50%</span>
+
+        <i class="bi bi-heart hearty "></i>
+        <!-- <i class="bi bi-heart-fill" *ngIf="!true"></i> -->
+
+        <i class="bi bi-eye eyey"></i>
+    </div>
+  </div>
+  <div style="height: 100px; width: 100%;"></div>
+</div>

@@ -1,0 +1,111 @@
+<section class="details px-5 row">
+  <section class="viewimages col-lg-6 col-md-12 col-sm-12">
+    <div class="card">
+      <p-galleria
+        [value]="images"
+        [thumbnailsPosition]="'left'"
+        [responsiveOptions]="responsiveOptions"
+        [containerStyle]="{
+          'max-width': '640px',
+          padding: '0px',
+          margin: '0px'
+        }"
+        [numVisible]="5"
+      >
+        <ng-template pTemplate="item" let-item class="width:100%;">
+          <img
+            [src]="item.itemImageSrc"
+            style="width: 100%; min-height: 440px"
+          />
+        </ng-template>
+        <ng-template pTemplate="thumbnail" let-item>
+          <div class="grid grid-nogutter justify-content-center">
+            <img [src]="item.thumbnailImageSrc" />
+          </div>
+        </ng-template>
+      </p-galleria>
+    </div>
+  </section>
+  <section class="describe col-md-6">
+    <div class="m-3">
+      <div class="head d-flex">
+        <h1 class="Phead">Chinese Cabbage</h1>
+        <p class="InStock px-2 py-1 m-2">In Stock</p>
+      </div>
+      <div class="rate">
+        <!-- <i class="bi bi-star-fill" *ngFor="let star of [1, 2, 3, 4, 5]"></i> -->
+        <div class="card01 d-flex flex-row justify-content-start">
+          <p-rating
+            [(ngModel)]="value"
+            [readonly]="true"
+            [cancel]="false"
+            style="color: #ff8a00"
+          ></p-rating>
+          <span> 4 Review</span>
+          <span class="px-3">.</span>
+          <p>SKU:2,344,434</p>
+        </div>
+      </div>
+      <div class="price d-flex my-2 mb-4">
+        <p><del style="color: #B3B3B3;">$48.00</del> $17.28</p>
+        <span class=" ms-4 px-2 discPres">64% Off</span>
+      </div>
+
+      <hr />
+      <div class="social ">
+        <div class="d-flex mt-4 mb-3 mx-0 justify-content-between align-items-center">
+
+          <div class="d-flex justify-content-start align-items-center">
+            <p class="px-2">Brand : </p>
+            <img
+              src="../../../../assets/images/product/ProductDetails/leafIcon.svg" class="brands"
+              alt=""
+            />
+          </div>
+
+          <div class="share d-flex">
+            <p class="mx-2 d-flex align-items-center">Share item : </p>
+            <i class=" socialLink fa-brands fa-facebook-f"></i>
+            <i class=" socialLink fa-brands fa-twitter"></i>
+            <i class=" socialLink fa-brands fa-instagram"></i>
+            <i class=" socialLink fa-brands fa-pinterest-p"></i>
+          </div>
+
+        </div>
+        <p class="disc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facere,
+          recusandae ad debitis odio ipsum corrupti? Excepturi tenetur
+          temporibus fugiat ducimus rerum possimus voluptates facilis officiis
+          hic, rem repellat minus?
+        </p>
+        <div class="addToCard d-flex justify-content-between  my-2">
+          <div class="count d-flex">
+            <i class="bi bi-dash-lg minus"></i>
+            <p class="counter mx-2 ">1</p>
+            <i class="bi bi-plus plus"></i>
+          </div>
+          <div class="btns" style="width: 65%;">
+            <app-button label="Add to Card" [IconFound]="true"></app-button>
+          </div>
+          <div class="favourite  ms-1"><i class="bi bi-heart text-center heartt"></i></div>
+        </div>
+
+        <hr />
+
+        <div class="category my-4">
+          <p>Category : <span style="color: #808080;">Vegetables</span></p>
+          <p>Tag : <span style="color: #808080;" *ngFor="let tag of [1, 2, 3]"> tags </span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<div class="nav w-100">
+  <app-tab-view style="width: 100%"></app-tab-view>
+</div>
+
+<div class="relatedProducts">
+  <h3 class="text-center m-3 p-3">Related products</h3>
+  <app-related-products></app-related-products>
+</div>

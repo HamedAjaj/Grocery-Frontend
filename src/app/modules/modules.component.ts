@@ -7,9 +7,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./modules.component.scss']
 })
 export class ModulesComponent implements OnInit {
+  loading!:boolean;
+
   constructor(private _router:Router){}
   ngOnInit(): void {
-   // this._router.navigate(['/home']);
+    this.loading = true; 
+    
+    setTimeout(() => {
+      this.loading=false
+    }, 2000); 
   }
+   
+  
+  
 
 }

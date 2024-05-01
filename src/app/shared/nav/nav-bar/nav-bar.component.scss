@@ -99,3 +99,18 @@ nav{
 .dropdown .dropdown-menu .show{
     margin: 30px;
 }
+
+.auth button{
+    width: auto;
+    height: 40px;
+    border: none;
+    //background-color: #3BB77E;
+    color: #3BB77E;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .texts{
+        display: none;
+    }
+}

@@ -1,0 +1,33 @@
+@import '../../../../styles/variables.scss';
+.discount{
+    border: 1px solid rgba(185, 183, 183, 0.463);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    
+    text-wrap: nowrap;
+}
+
+.perentDiscount{
+    text-wrap: nowrap;
+    line-height: .4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.DiscountImg{
+    width: 30px;
+    height: 40px;
+
+}
+
+
+.headDiscount{
+    font-weight: 700;
+}
+
+.textDiscount{
+    font-size: $fontSize;
+}

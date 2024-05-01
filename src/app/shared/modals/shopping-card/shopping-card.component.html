@@ -1,0 +1,74 @@
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog"
+    style="position: absolute; top: 0; right: 0; margin: 0"
+  >
+    <div
+      class="modal-content position-relative"
+      style="width: 350px; height: 100vh"
+    >
+      <div class="modal-body w-100">
+        <div class="d-flex justify-content-around align-items-center">
+          <h3>Shopping Card (2)</h3>
+          <i class="bi bi-x fs-2" data-bs-dismiss="modal"> </i>
+        </div>
+        <div *ngFor="let card of [1, 2, 3]">
+          <div class="body d-flex justify-content-between align-items-center">
+            <div class="d-flex">
+              <img
+                src="../../../../assets/images/carts/r1.png"
+                style="width: 100px; height: auto"
+                alt=""
+              />
+              <div class="d-flex flex-column justify-content-center">
+                <p
+                  style="
+                    font-size: 14px;
+                    line-height: 0.5em;
+                    text-align: center;
+                  "
+                >
+                  Fresh Indian Orange
+                </p>
+                <p
+                  style="
+                    color: rgb(201, 203, 205);
+                    font-size: 14px;
+                    line-height: 0.5em;
+                    text-align: center;
+                  "
+                >
+                  1 kg x <span style="color: rgb(19, 19, 19)">12.00</span>
+                </p>
+              </div>
+            </div>
+            <div class="bi bi-x-circle d-flex justify-content-end"></div>
+          </div>
+          <hr style="height: 3px; color: rgb(167, 194, 196)" class="m-0" />
+        </div>
+      </div>
+      <div class="footer w-100 pb-2">
+        <div class="d-flex flex-column px-2">
+          <div class="d-flex flex-row justify-content-between w-100 px-2">
+            <p>2 Products</p>
+            <p>$26.00</p>
+          </div>
+          <div class="mt-3"><app-button label="Checkout"></app-button></div>
+          <div class="mt-3">
+            <app-button
+              label="Cancel"
+              backgroundColor="rgb(243, 231, 231)"
+              color="#00B207"
+            ></app-button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

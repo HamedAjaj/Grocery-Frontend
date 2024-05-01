@@ -1,6 +1,6 @@
 <p-carousel [value]="[1,2,3,4,5,6,7,8,9]" [numVisible]="4" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions" [showIndicators]="false"  class="carousel">
     <ng-template let-product pTemplate="item" >
-        <div class="card mx-2 p-2" >
+        <div class="card mx-2 p-2"routerLink="/products/product-details"  style="cursor: pointer;">
             <p class="offer px-3 py-2" style="font-size: 12px !important;">Save 10%</p>
             <img src="../../../assets/images/headernav/Call.svg" class="imgCard" height="120" width="30%" alt="">
             <p class=" fs-6 my-0" style="color: #d4cfcf;margin-top: -10px;margin-bottom: -10px;padding: 0;font-weight:200;font-size: 12px !important;">Coffee & tea</p>

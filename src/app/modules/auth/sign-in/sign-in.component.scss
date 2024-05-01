@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signupcontainer{
+    background-color: rgba(252, 252, 252, 0.568);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.header{
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    color: #1A1A1A;
+}
+
+
+
+

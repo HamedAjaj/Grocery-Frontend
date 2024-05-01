@@ -1,0 +1,15 @@
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    height: 49px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: unset;
+    border: 1px solid rgb(216, 204, 204);
+    padding-left: 10px;
+}
+@media only screen and (max-width: 768px) {
+    input[type="text"]{
+        width: 100%;
+    }
+}

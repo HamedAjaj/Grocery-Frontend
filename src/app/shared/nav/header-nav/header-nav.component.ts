@@ -10,7 +10,7 @@ export class HeaderNavComponent {
 constructor(private router:Router){}
 
   data=[
-    {name:'Home',router:'/home',img:'home.svg', width:'col-md-1 ms-3'},
+    {name:'Home',router:'',img:'home.svg', width:'col-md-1 ms-3'},
     {name:'Hot deals',router:'#hot',img:'hotdeals.svg', width:'col-md-1'},
     {name:'Promotion',router:'#pro',img:'li_percent.svg', width:'col-md-1 me-2'},
     {name:'New Products Pro',router:'/new-products',img:'newProducts.svg', width:'col-md-2'},

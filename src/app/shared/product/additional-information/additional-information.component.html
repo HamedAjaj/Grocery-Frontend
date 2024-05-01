@@ -1,0 +1,90 @@
+<!-- <section class="row d-flex justify-content-between">
+  <div class="textDiscription col-md-6">
+    <div>
+      <div class="d-flex" *ngFor="let x of [1, 2, 3, 4, 5, 6]">
+        <p>Weight</p>
+        <p>03</p>
+      </div>
+    </div>
+  </div>
+  <div class="files col-md-6 ">
+    <img
+      src="../../../../assets/images/product/ProductDetails/discovideo.png"
+      class="w-100 "
+                alt=""
+    />
+    <div class="discount d-flex justify-content-between p-3 row">
+      <div class="d-flex col-md-6">
+        <img
+          src="../../../../assets/images/product/ProductDetails/discount.svg"
+          class="DiscountImg"
+          alt=""
+        />
+        <div class="perentDiscount m-2">
+          <p class="headDiscount">64% Discount</p>
+          <p class="textDiscount">
+            Save your 64% money with us
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex col-md-6">
+        <img
+          src="../../../../assets/images/product/ProductDetails/leaf.svg"
+          class="DiscountImg"
+          alt=""
+        />
+        <div class="perentDiscount m-2">
+          <p class="headDiscount">100% Organic</p>
+          <p class="textDiscount">100% Organic Vegetables</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ -->
+<section class="row d-flex justify-content-between">
+  <div class="textDiscription col-md-6">
+    <div>
+      <div
+        class="d-flex flex-row row"
+        *ngFor="let x of arrays"
+      >
+        <p class="col-md-3" style="color: #1A1A1A;font-size: 14px; font-weight: 600;">{{x.name}} : </p>
+        <p class="col-md-9">{{x.value}}</p>
+      </div>
+    </div>
+  </div>
+   <div class="files col-md-6">
+    <img
+      src="../../../../assets/images/product/ProductDetails/discovideo.png"
+      class="mx-1"style="width:98%"
+                alt=""
+    />
+    <div class="discount d-flex justify-content-between p-3 mx-1 row ">
+      <div class="d-flex col-md-10 col-lg-6 col-sm-12">
+        <img
+          src="../../../../assets/images/product/ProductDetails/discount.svg"
+          class="DiscountImg"
+          alt=""
+        />
+        <div class="perentDiscount m-2">
+          <p class="headDiscount">64% Discount</p>
+          <p class="textDiscount">Save your 64% money with us</p>
+        </div>
+      </div>
+
+      <div class="d-flex col-md-6">
+        <img
+          src="../../../../assets/images/product/ProductDetails/leaf.svg"
+          class="DiscountImg"
+          alt=""
+        />
+        <div class="perentDiscount m-2">
+          <p class="headDiscount">100% Organic</p>
+          <p class="textDiscount">100% Organic Vegetables</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

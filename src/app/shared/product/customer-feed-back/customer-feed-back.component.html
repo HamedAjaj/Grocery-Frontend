@@ -1,0 +1,37 @@
+<section class="row">
+  <div class="user col-md-8">
+   <div>
+    <div class="imgprofile" *ngFor="let u of [1, 2, 3, 4]">
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="../../../../assets/images/product/user/user1.png" alt="" />
+          <div class="userName ms-2">
+            <p class="text-bold">Hamed Farag</p>
+            <p-rating
+              [(ngModel)]="value"
+              [readonly]="true"
+              [cancel]="false"
+              style="color: #ff8a00"
+            ></p-rating>
+          </div>
+        </div>
+        <div class="postDate text-muted">last 20 min</div>
+      </div>
+      <div class="comment my-3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque amet
+        cor
+      </div>
+    </div>
+   </div>
+    <div style="width: 20%">
+      <app-button
+        backgroundColor="#E6F9E7"
+        color="#00B207"
+        label="Load More"
+        fontWeight="500"
+      ></app-button>
+    </div>
+  </div>
+ 
+  <div class="col-md-4"></div>
+</section>

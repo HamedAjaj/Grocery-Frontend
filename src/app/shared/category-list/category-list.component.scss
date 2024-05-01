@@ -6,3 +6,8 @@
     border: none;
   }
 
+  ::ng-deep .p-carousel .p-carousel-content .p-carousel-items {
+    display: grid  ;
+    justify-content: center  !important; 
+  }
+  

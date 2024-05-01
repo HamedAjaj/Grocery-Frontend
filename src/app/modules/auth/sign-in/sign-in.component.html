@@ -1,0 +1,39 @@
+<section class="signup my-4">
+    <div class="row d-flex signupcontainer shadow col-xl-5 col-md-10 col-sm-12">
+      <p class="header mb-2">Sign In</p>
+      <form class="signForm col-md-12">
+        <app-input type="email" placeholder="Email"></app-input>
+        <app-input type="password" placeholder="password"></app-input>
+        <div class="d-flex justify-content-between ">
+            <div class="form-group">
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  placeholder="enter name"
+                  class="col-md-1 me-1"
+                  style="width: 15px; height: 15px"
+                />
+                <span style="font-size: 14px; font-family: 'poppins'; color: #666666"
+                  >Remember Me</span
+                >
+              </div>
+              <p style="color: #44b165;cursor: pointer;" routerLink="/auth/forget-password">Forget password</p>
+        </div>
+        <div class="mt-3"><app-button label="Sign-In"></app-button></div>
+      </form>
+      <p
+        style="
+          font-size: 14px;
+          font-family: 'poppins';
+          color: #666666;
+          text-align: center;
+          margin-top: 10px;
+        "
+      >
+        Don't have account
+        <span style="font-weight: 500; color: #1a1a1a;cursor: pointer;" routerLink="/auth/sign-up">Sign-up</span>
+      </p>
+    </div>
+  </section>
+  

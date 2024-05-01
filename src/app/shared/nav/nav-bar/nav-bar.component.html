@@ -1,49 +1,65 @@
 <nav class="row d-flex justify-content-center">
-    <div class="d-flex justify-content-center align-items-start name col-md-2">
-        <img src="./assets/images/navbar/g_icon.svg" alt="">
-        <p class="grocName"><span class="d-block"> Hamed</span> Grocery</p>
+  <div class=" logo d-flex justify-content-center align-items-start name col-md-2 " style="cursor: pointer;" routerLink="/">
+    <img src="./assets/images/navbar/g_icon.svg" alt="" />
+    <p class="grocName"><span class="d-block"> Hamed</span> Grocery</p>
+  </div>
+  <div class="search col-md-4">
+    <div class="category mx-1">
+      <label for="slct"></label>
+      <select name="slect" id="slct">
+        <option>All Catgeories</option>
+        <option>1</option>
+        <option>1</option>
+        <option>1</option>
+      </select>
     </div>
-    <div class="search col-md-4">
-        <div class="category mx-1">
-            <label for="slct"></label>
-            <select name="slect" id="slct">
-                <option>All Catgeories</option>
-                <option>1</option>
-                <option>1</option>
-                <option>1</option>
-            </select>
-        </div>
-        <div class="searchInput">
-            <input type="search" placeholder="search for items...">
-            <i class="fa fa-search"></i>
-        </div>
+    <div class="searchInput">
+      <input type="search" placeholder="search for items..." />
+      <i class="fa fa-search"></i>
     </div>
-    <div class="col-md-1 ms-4 d-flex justify-content-center align-items-center">
-        <img src="./assets/images/navbar/wishList.svg" alt="">
-        <span> Wishlist</span>
+  </div>
+  <div class="Wishlist col-lg-1 col-md-1 ms-4 d-flex justify-content-center align-items-end" style="cursor: pointer;" routerLink="/wishlist">
+    <img src="./assets/images/navbar/wishList.svg" alt="" />
+    <span class=" texts d-md-none d-lg-none d-xl-flex"> Wishlist</span>
+  </div>
+  <div class="myCart col-lg-2 col-md-1 d-flex justify-content-center align-items-center cart"
+    style="cursor: pointer"
+    data-bs-toggle="modal"
+    data-bs-target="#exampleModal"
+  >
+    <img src="./assets/images/navbar/myCart.svg" alt="" />
+    <p class="texts d-md-none d-lg-flex">My Cart <span class="d-block">$12</span></p>
+  </div>
+  <div class="user col-md-2 d-flex justify-content-start align-items-center "
+    *ngIf="signed"
+  >
+    <img src="./assets/images/navbar/user.svg" alt="" />
+    <p class=" texts ms-1 d-md-none ">Hamed Farag</p>
+    <div class="dropdown">
+      <button
+        class="btn btn-light dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      ></button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
     </div>
-    <div class="col-md-2 d-flex justify-content-center align-items-center cart">
-        <img src="./assets/images/navbar/myCart.svg" alt="">
-        <p> My Cart <span class="d-block">$12</span></p>
-        <select name="slect" id="cartSelect">
-            <option></option>
-            <option>1</option>
-            <option>1</option>
-            <option>1</option>
-        </select>
-    </div>
-    <div class="col-md-2 d-flex justify-content-start align-items-center user">
-        <img src="./assets/images/navbar/user.svg" alt="">
-        <p class="ms-1">Hamed Farag</p>
-        <div class="dropdown">
-            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-             
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-    </div>
+  </div>
+  <div class="auth col-md-2 d-flex justify-content-start align-items-center "
+    *ngIf="!signed"
+  >
+    <button class="m-2 px-2" routerLink="/auth/sign-in">SignIn</button>
+    <span style="color: #3bb77e" class="d-sm-none d-md-none d-lg-none d-xl-flex ">/</span>
+    <button class="m-2 px-2 d-sm-none d-md-none d-lg-none d-xl-block text-center" routerLink="/auth/sign-up">Sign-up</button>
+  </div>
 </nav>
+
+<app-shopping-card></app-shopping-card>
+
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="position: absolute; top: 0;right: 0; width: 300px;height: 100px;"> -->
+<!-- Modal -->

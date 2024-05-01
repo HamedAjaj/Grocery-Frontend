@@ -1,0 +1,23 @@
+/* .user{
+   // border-bottom: 1.5px solid rgba(203, 194, 194, 0.589);
+
+} */
+.imgprofile{
+    border-bottom: 1.5px solid #E6E6E6;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.imgprofile:last-of-type {
+    border-bottom: none;
+  }
+.userName{
+    line-height: .1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+}
+.hrline:last-child{
+    color: #000;
+}
