@@ -1,0 +1,47 @@
+<div class="shoppingcart container row d-flex">
+  <section class="col-md-8 shoppingcart">
+    <table class="table table-borderless px-3">
+      <thead style="font-weight: 200">
+        <tr class="d-flex justify-content-start row mx-2">
+          <th class="col-3" colspan="2" scope="col">PRODUCT</th>
+          <th class="col-3">PRICE</th>
+          <th class="col-3">QUANTITY</th>
+          <th class="col-3">SUBTOTAL</th>
+          <hr style="color: rgb(137, 167, 194); margin: 0" />
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="d-flex justify-content-start align-items-center mx-2"
+          *ngFor="let x of [1, 2, 3, 4, 5]"
+          style="border-bottom: 1px solid rgb(233, 236, 237)"
+        >
+
+          <td class="col-3 d-flex justify-content-start align-items-center">
+            <img
+              class="image"
+              src="../../../assets/images/carts/r1.png"
+              alt=""
+            />
+            <p>Name of</p>
+          </td>
+
+          <td class="col-3">12.12$, 12</td>
+
+          <td class="col-4" style="width: 20%">
+            <div class="count d-flex">
+              <i class="bi bi-dash-lg minus"></i>
+              <p class="counter mx-2">1</p>
+              <i class="bi bi-plus plus"></i>
+            </div>
+          </td>
+
+          <td class="col-2">13,34$</td>
+       
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="col-md-4 proceed">
+  </section>
+</div>

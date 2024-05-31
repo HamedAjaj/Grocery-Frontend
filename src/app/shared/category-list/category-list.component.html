@@ -12,11 +12,14 @@
 
 <p-carousel [value]="SubCategory" [numVisible]="6" [numScroll]="1" [circular]="false" [responsiveOptions]="responsiveOptions" [showIndicators]="false" >
   <ng-template let-product let-i pTemplate="item" >
-    <div  [ngStyle]="{ 'background-color': backgroundColor[SubCategory.indexOf(product)]}" class="card mx-2 px-2" >
-      <img src="http://localhost:3000/products/{{product.image}}" alt="categoryProduct">
-    <h3>{{ product.categoryName }}</h3>
-    <p>{{ product.description }}</p>
-    <p>{{product.id}}</p>
+    <div  [ngStyle]="{ 'background-color': backgroundColor[SubCategory.indexOf(product)]}" class="card mx-2" >
+      <div>
+        <img class="imaging" src="{{product.image}}" alt="categoryProduct">
+      </div>
+      <div class="text">
+        <h3 class="px-2">{{ product.categoryName }}</h3>
+        <p class="px-2">{{ product.description }}</p>
+      </div>
   </div>
     </ng-template>
 </p-carousel>

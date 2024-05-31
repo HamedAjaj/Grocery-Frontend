@@ -19,30 +19,11 @@ export class CategoryComponent implements OnChanges{
   constructor(private categoryService: CategoryService) {}
 
     ngOnChanges(changes: SimpleChanges): void {
-   
     const firstCategoryName = 'All';    
     this.onCategoryClick(firstCategoryName);
     console.log(this.categories,this.subCategories);
-    
   }
 
-
-/*   getCategories(){
-    this.categoryService.getCategories().subscribe(categories => {
-      this.categories = categories;
-    });
-  }
-  
-  getsubCategories() {
-    this.categoryService.getsubCategories().subscribe(
-      subCategories => {
-        this.subCategories = subCategories;
-        const firstCategoryName = 'All';
-        this.onCategoryClick(firstCategoryName);
-      }
-    )
-  }
-   */
   filterCategories() {
     this.filteredsubCategories = [];
     for (const subCategory of this.subCategories) {      

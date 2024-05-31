@@ -11,5 +11,7 @@ export class ButtonComponent {
   @Input() color!: string;
   @Input() IconFound=false;
   @Input() fontWeight!:string;
+  @Input() route!:string;
+
   
 }

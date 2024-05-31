@@ -3,6 +3,7 @@
   .card{
     max-width: 100%;
     min-height: 228px;
+    height: 250px;
     border: none;
   }
 
@@ -11,3 +12,17 @@
     justify-content: center  !important; 
   }
   
+
+  .imaging{
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    width: 180px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .text{
+    height: 100px;
+  }

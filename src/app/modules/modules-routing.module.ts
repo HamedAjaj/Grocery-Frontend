@@ -36,11 +36,24 @@ const routes: Routes = [
         loadChildren: () =>
           import('./product/product.module').then((m) => m.ProductModule),
       },
+      {
+        path: 'shopping-cart',
+        loadChildren: () =>
+          import('./shopping-cart/shopping-cart.module').then(
+            (m) => m.ShoppingCartModule
+          ),
+      },
 
       { path: '**', component: NotFoundComponent },
     ],
   },
-  { path: 'product-details', loadChildren: () => import('./product/product-details/product-details.module').then(m => m.ProductDetailsModule) },
+  {
+    path: 'product-details',
+    loadChildren: () =>
+      import('./product/product-details/product-details.module').then(
+        (m) => m.ProductDetailsModule
+      ),
+  },
 ];
 
 @NgModule({

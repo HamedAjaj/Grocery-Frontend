@@ -1,6 +1,7 @@
 .hero {
-    position: relative;
-    margin: 0;
+    display: flex;
+    align-items: center;
+    position: relative;  
     padding: 0;
     width: 100%;
     min-height: 730px;
@@ -9,6 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 /* Create a separate layer for opacity effect */
 .hero::before {

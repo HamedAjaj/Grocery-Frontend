@@ -17,16 +17,19 @@
  */
 
 
- .card{
+ .cardingsell{
    border: 1px solid rgb(223, 219, 219);
+   height: auto;
  }
 
 
  .offer{
+   position: absolute;
     background-color: #FFD480;
     margin: -8px -8px;
     border-radius: 3px;
     width: fit-content;
+    z-index: 2323223;
  }
 
  #addCard{

@@ -15,7 +15,7 @@
     >
       <div class="modal-body w-100">
         <div class="d-flex justify-content-around align-items-center">
-          <h3>Shopping Card (2)</h3>
+          <h3>Shopping Card (3)</h3>
           <i class="bi bi-x fs-2" data-bs-dismiss="modal"> </i>
         </div>
         <div *ngFor="let card of [1, 2, 3]">
@@ -59,12 +59,12 @@
             <p>2 Products</p>
             <p>$26.00</p>
           </div>
-          <div class="mt-3"><app-button label="Checkout"></app-button></div>
+          <div class="mt-3"><app-button label="Checkout" route="/shopping-cart" data-bs-dismiss="modal"></app-button></div>
           <div class="mt-3">
             <app-button
               label="Cancel"
               backgroundColor="rgb(243, 231, 231)"
-              color="#00B207"
+              color="#00B207" data-bs-dismiss="modal"
             ></app-button>
           </div>
         </div>

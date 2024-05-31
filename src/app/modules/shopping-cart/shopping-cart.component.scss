@@ -1,0 +1,82 @@
+@import '../../../styles/variables.scss';
+*{
+    font-family: $fontFamily;
+}
+
+
+h3{
+    font-weight: $fontWeightLarge600;
+}
+tr>th{
+    text-wrap: nowrap;
+    color: #808080;
+    font-size: $fontSize;
+    font-weight: $fontWeightLarge600;
+}
+tr>td{
+    text-wrap: nowrap;
+    color: #808080;
+}
+
+/* .stock{
+    width: 100px;
+    height: 40px;
+    padding: 8px;
+    margin: 5px;
+    text-align: center;
+    color: #1e7f21;
+    background-color: #7bcd7c56;
+    border-radius: 4px;
+
+} */
+
+.image{
+    width: 70px;
+    height: 60px;
+}
+
+
+
+
+.count{
+    border: 1px solid #E6E6E6;
+    border-radius: 40px;
+  
+  }
+  
+  .minus,.plus{
+    font-size: 20px;
+    background-color: #F2F2F2;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .plus{
+  
+  }
+  
+  .minus:hover,.plus:hover{
+    background-color: $green;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+
+  .proceed{
+    background-color: #E6E6E6;
+    border-radius: 10px;
+    border: 2px solid #808080;
+    height: 250px;
+  }
