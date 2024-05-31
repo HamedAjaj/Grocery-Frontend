@@ -1,6 +1,32 @@
 
 # Grocery
 
+### Project Structure
+
+# Project Name :Grocery
+
+Project created to be maintainable ,  reusable ,clean code
+
+## consist of 3 Modules
+####	1 - Core module
+		- Directives
+		- Pipes
+		- Interfaces
+		- Grocery-EndPoints
+    - Services
+####	2 - Modules module
+		- main components
+###	3 - Shared module
+		- Custom components  or shared components
+###	4 - Environments module
+
+### If you have a suggestion, I will listen with all interest to your opinions.
+### If find other ideas, I will write them  here.
+### Thanks  😊  
+	
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.12.
 
 ## Development server
